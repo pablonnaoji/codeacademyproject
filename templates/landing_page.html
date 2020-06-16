@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<center>
+	<h1>Welcome to TriPlanned where you and your friends can share travel plans.</h1>
+	<h3>Travelers on Triplanned are going to:</h3>
+	{% for post in posts %}
+<li>{{ post.city }} - {{ post.description }}</li>
+{% endfor %}
+</center>
+
+
+
+
+{% endblock %}

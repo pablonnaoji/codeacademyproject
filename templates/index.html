@@ -1,0 +1,12 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - TriPlanned</title>
+        {% else %}
+        <title>Welcome to TriPlanned!</title>
+        {% endif %}
+    </head>
+    <body>
+        <h1>Hello, {{ user.username }}!</h1>
+    </body>
+</html>
